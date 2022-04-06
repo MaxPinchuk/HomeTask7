@@ -31,15 +31,37 @@ package com.company.task;
 
 public class Main {
     public static void main(String[] args) {
+
         String name = "Vasya";
         int age = 18;
         int amountOfMany = 20_000;
         boolean byInCredit = true;
         boolean byInCreditNoMany = true;
-    }
 
-    public static void main(String[] args) {
+        String car = "Skoda";
+        int price = 25_000;
+        int numberOfCar = 5;
 
+        if (age < 18) {     //тут надо пощитать разницу в возрасте
 
+            System.out.println("извините приходите через" + age);
+            }
+
+        if (age >= 18) { //проверить сколько денег, если денег хватает – завернуть машину
+            // и поздравить клиента с покупкой
+            if (amountOfMany>=25_000);
+            System.out.println("Поздравляем с покупком автомобиля");
+
+            else (amountOfMany<25_000){ //нужно проверить, готов ли клиент взять кредит.
+                // оформляем кредит (для упрощения фиксировано на 3 года),
+            // выводим на экран ежемесячный платеж.
+
+                System.out.println("Поздравляем с покупком автомобиля. Не забывайте каждый месяц платить" + Х);
+            }
+
+            if (byInCreditNoMany =false){
+                System.out.println("Приходите попозже");
+            }
+        }
     }
 }

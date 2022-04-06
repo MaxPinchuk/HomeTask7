@@ -33,7 +33,8 @@ public class Main {
     public static void main(String[] args) {
 
         String name = "Vasya";
-        int age = 18;
+        int age = 17;
+        int dif;
         int amountOfMany = 20_000;
         boolean byInCredit = true;
         boolean byInCreditNoMany = true;
@@ -43,23 +44,25 @@ public class Main {
         int numberOfCar = 5;
 
         if (age < 18) {     //тут надо пощитать разницу в возрасте
-
-            System.out.println("извините приходите через" + age);
-            }
+            dif = age - 18;
+            System.out.println("извините приходите через" + dif + "лет");
+        }
 
         if (age >= 18) { //проверить сколько денег, если денег хватает – завернуть машину
             // и поздравить клиента с покупкой
-            if (amountOfMany>=25_000);
-            System.out.println("Поздравляем с покупком автомобиля");
+            if (amountOfMany >= 25_000) ;
+            {
+                System.out.println("Поздравляем с покупком автомобиля");
 
-            else (amountOfMany<25_000){ //нужно проверить, готов ли клиент взять кредит.
+            else(amountOfMany < 25_000) { //нужно проверить, готов ли клиент взять кредит.
                 // оформляем кредит (для упрощения фиксировано на 3 года),
-            // выводим на экран ежемесячный платеж.
+                // выводим на экран ежемесячный платеж.
 
                 System.out.println("Поздравляем с покупком автомобиля. Не забывайте каждый месяц платить" + Х);
             }
+            }
 
-            if (byInCreditNoMany =false){
+            if (byInCreditNoMany = false) {
                 System.out.println("Приходите попозже");
             }
         }

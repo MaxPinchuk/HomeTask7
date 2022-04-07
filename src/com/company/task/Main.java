@@ -35,7 +35,7 @@ public class Main {
         String name = "Vasya";
         int age = 18;
         int amountOfMoney = 1;
-        boolean byInCredit = false;
+        boolean byInCredit = true;
 
         String car = "Skoda";
         int price = 25_000;
@@ -51,7 +51,7 @@ public class Main {
             System.out.println(name + ", поздравляем с покупком автомобиля");
         } else if (byInCredit) {
             double dif = (price - amountOfMoney) / 36.0;
-            System.out.println(name + ", поздравляем с покупком автомобиля. Не забывайте каждый месяц платить " + dif +".");
+            System.out.println(name + ", поздравляем с покупком автомобиля. Не забывайте каждый месяц платить " + dif + ".");
         } else System.out.println(name + ", приходите попозже.");
     }
 }
